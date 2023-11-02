@@ -19,14 +19,14 @@ async function delayFetch(url: string, delay: number){
 }
 
 // async function getData(){
-//   // https://api.github.com/users/devfraga/repos
-//   const response = await fetch("https://api.github.com/users/devfraga/repos")
+//   // https://api.github.com/users/jColacoDev/repos
+//   const response = await fetch("https://api.github.com/users/jColacoDev/repos")
 
 //   return response.json();
 // }
 
 async function getData(){
-  const data = await delayFetch("https://api.github.com/users/devfraga/repos", 0)
+  const data = await delayFetch("https://api.github.com/users/jColacoDev/repos", 0)
   return data;
 }
 
