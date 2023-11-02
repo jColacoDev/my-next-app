@@ -1,14 +1,10 @@
-import './globals.css'
-import { Header } from '@/components/header'
-import type { Metadata } from 'next'
-
+import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: 'Meu Site - Aprendendo NextJS',
+  title: 'Painel - Aprendendo NextJS',
   description: 'Site completo para praticar nextjs com sujeito programador',
   keywords: ['HTML', 'CSS', 'JavaScript', 'Programação'],
   openGraph:{
-    title: "Aprendendo Next JS com Sujeito",
     images: ['https://sujeitoprogramador.com/wp-content/uploads/2023/06/softsk-1024x576.jpg']
   },
   robots:{
@@ -23,17 +19,14 @@ export const metadata: Metadata = {
   }
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      <body suppressHydrationWarning={true}>
-        <Header/>
-        {children}
-      </body>
-    </html>
+
+export default function Dashboard(){
+  return(
+    <div>
+      <h1>Página painel</h1>
+      <span>Bem vindo ao painel do site</span>
+      <br/>
+      
+    </div>
   )
 }
